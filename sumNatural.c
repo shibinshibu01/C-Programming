@@ -14,6 +14,6 @@ int sumNatural(int count,int sum){
         return sum;
     } else {
         sum+=count;
-        return sumNatural(count-1,sum);;
+        return sumNatural(count-1,sum);
     }
 }
