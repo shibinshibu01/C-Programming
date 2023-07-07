@@ -18,9 +18,14 @@ int main(){
         printf("Neither Prime nor Composite");
     } else {
         if(checkPrime(num,i)==1){
-            printf("Not Prime");
+            printf("Not Prime\n");
         } else {
-            printf("Prime");
+            printf("Prime\n");
+        }
+    }
+    for(i;i<num;i++){
+        if(checkPrime(i,2)==0){
+            printf("%d\t",i);
         }
     }
 }
