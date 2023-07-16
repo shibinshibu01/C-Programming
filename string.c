@@ -26,14 +26,12 @@ int main(){
 
     //4
     char str[100];
-    int count = 0, i = 0;
-    fgets(str, 100, stdin);
-    while (1) {
-        if (str[i] == '\0')
-            break;
-        else
-            count++;
+    int count = 0,i=0;
+    fgets(str,100,stdin);
+    while(1){
+        if(str[i]=='\0') break;
+        else count++;
         i++;
     }
-    printf("%d", count-1);
+    printf("%d",count);
 }
