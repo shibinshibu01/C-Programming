@@ -29,11 +29,11 @@ int main(){
     int count = 0, i = 0;
     fgets(str, 100, stdin);
     while (1) {
-        if (str[i] == '\0' || str[i] == '\n')
+        if (str[i] == '\0')
             break;
         else
             count++;
         i++;
     }
-    printf("%d", count);
+    printf("%d", count-1);
 }
