@@ -11,7 +11,8 @@ void swap(int *n, int *m) {
     *m = temp;
 }
 int main() {
-    int n,j;
+    int n;
+    // int j;
     printf("Enter the size of the array: ");
     scanf("%d", &n);
 
@@ -25,10 +26,10 @@ int main() {
     printf("The Original Array:\n");
     printArr(arr,n);
 
-    j=n-1;
+    // j=n-1;
     for(int i = 0; i < n/2; i++) {
-        swap(&arr[i],&arr[j]);
-        j--;
+        swap(&arr[i],&arr[n-i-1]);
+        // j--;
     }
     printf("\nThe New Array:\n");
     printArr(arr,n);
