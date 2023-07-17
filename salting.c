@@ -44,5 +44,7 @@ int main(){
     printf("\n\tSalting: ");
     puts(new);
     printf("\n---------------------------------------------------\n");
+    printf("Press any button to close...");
+    scanf("%s");
     return 0;
 }
