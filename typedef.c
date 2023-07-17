@@ -6,14 +6,19 @@ typedef struct thisIsAnExample {
     num *ptr;
 }th;
 
+struct demo {
+    char character;
+};
+
 void main(){
-    th eg;
-    th *ptr1=&eg;
+    th eg,*ptr1=&eg;
+    struct demo demo;
     num i=4;
     eg.number = i;
     eg.ptr = &eg.number;
     printf("%d\n", *(eg.ptr));
     ptr1->number = 5;
-    ptr1->ptr = &(ptr1->number);
-    printf("%d\n", *(ptr1->ptr));
+    printf("%d\n",ptr1->number);
+    demo.character ='S';
+    printf("%c\n", demo.character);
 }
