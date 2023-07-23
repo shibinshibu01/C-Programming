@@ -29,10 +29,20 @@ void main(){
 
     printf("\n\nEnter no: ");
     scanf("%d",&nMalloc);
+    printf("\nmalloc\n");
     ptr= (int *)malloc(nMalloc*sizeof(int));
-    printf("Enter %d numbers to array: ",nMalloc);
-    input(ptr,nMalloc);
+    //printf("Enter %d numbers to array: ",nMalloc);
+    //input(ptr,nMalloc);
     print(ptr,nMalloc);
+    printf("\ncalloc\n");
+    ptr= (int *)calloc(nMalloc,sizeof(int));
+    print(ptr,nMalloc);
+    printf("\nrealloc\n");
+    ptr= realloc(ptr,8);
+    print(ptr,8);
+    printf("\nrelloc\n");
+    ptr= realloc(ptr,2);
+    print(ptr,2);
     
     printf("\n\nSize of Array : %d",sizeof(arr));
     printf("\nSize of Dynamically Allocated Array : %d",sizeof(ptr)*nMalloc);
